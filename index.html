@@ -26,9 +26,11 @@
 
     <section class="container-fluid">
       <div class="row">
-        <!-- <div class="collection col s6">
+        <div class="collection col s12">
           <a href="#!" class="collection-item"><span class="badge">0</span>Contactos</a>
-        </div> -->
+        </div>
+      </div>
+      <div class="row">
         <form class="col s8">
           <div class="input-field">
             <input id="search" type="search" required placeholder="Buscar">
@@ -44,13 +46,9 @@
             <h4>Agregar contacto</h4>
             <form class="col s12">
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12">
                   <input id="first_name" type="text" class="validate">
                   <label for="first_name">Nombre</label>
-                </div>
-                <div class="input-field col s6">
-                  <input id="last_name" type="text" class="validate">
-                  <label for="last_name">Apellido</label>
                 </div>
               </div>
               <div class="row">
@@ -70,8 +68,40 @@
       </div>
     </section>
 
-    <section  id="contactos" class="container">
-
+    <section  id="contenedorContactos" class="container">
+      <div class="card">
+        <div class=" row card-content">
+          <div class="col s4">
+            <span><i class="large material-icons">person_pin</i></span>
+          </div>
+          <div class="col s8">
+            <p class="card-title activator grey-text text-darken-4">Adriana H.<i class="material-icons right">more_vert</i></p>
+            <div class="row">
+              <p>
+                <span><i class="material-icons">call</i></span>
+                <span class="font-size">5540271944</span>
+              </p>
+            </div>
+            <div class="row">
+              <p>
+                <span><i class="material-icons">email</i></span>
+                <span class="font-size">adriana.herya@gmail.com</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card-reveal">
+          <div class="row">
+            <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+          </div>
+          <div class="row">
+            <span><i class="material-icons">close</i><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Eliminar</a></span>
+          </div>
+          <div class="row">
+            <span><i class="material-icons">grade</i><a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Favoritos</a></span>
+          </div>
+        </div>
+      </div>
     </section>
 
 
