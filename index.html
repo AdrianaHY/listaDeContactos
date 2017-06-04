@@ -27,13 +27,13 @@
     <section class="container-fluid">
       <div class="row">
         <div class="collection col s12">
-          <a href="#!" class="collection-item"><span class="badge">0</span>Contactos</a>
+          <a href="#!" class="collection-item"><span id="spanContador" class="badge">0</span>Contactos</a>
         </div>
       </div>
       <div class="row">
         <form class="col s8">
           <div class="input-field">
-            <input id="search" type="search" required placeholder="Buscar">
+            <input  id="search" type="search" required placeholder="Buscar">
             <label class="label-icon" for="search"><i class="material-icons">search</i></label>
             <i class="material-icons">close</i>
           </div>
@@ -53,14 +53,14 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <input id="email" type="email" class="validate">
-                  <label for="email">Email</label>
+                  <input id="tel" type="tel" class="validate">
+                  <label for="tel">Tel.</label>
                 </div>
               </div>
           </form>
           </div>
           <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Guardar</a>
+            <a href="#!" id="guardar" class="modal-action modal-close waves-effect waves-green btn-flat">Guardar</a>
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
           </div>
         </div>
@@ -72,21 +72,17 @@
       <div class="card">
         <div class=" row card-content">
           <div class="col s4">
-            <span><i class="large material-icons">person_pin</i></span>
+            <span><i class="large material-icons person">person_pin</i></span>
           </div>
           <div class="col s8">
             <p class="card-title activator grey-text text-darken-4">Adriana H.<i class="material-icons right">more_vert</i></p>
             <div class="row">
-              <p>
-                <span><i class="material-icons">call</i></span>
+                <i class="material-icons call">call</i>
                 <span class="font-size">5540271944</span>
-              </p>
             </div>
             <div class="row">
-              <p>
-                <span><i class="material-icons">email</i></span>
-                <span class="font-size">adriana.herya@gmail.com</span>
-              </p>
+              <i class="material-icons">email</i>
+              <span class="font-size">adriana.herya@gmail.com</span>
             </div>
           </div>
         </div>
@@ -108,8 +104,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-
-  	<!-- <script src="app.js"></script> -->
+  	<script src="js/app.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
          $(".button-collapse").sideNav();
