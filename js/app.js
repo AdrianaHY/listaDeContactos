@@ -4,8 +4,7 @@ var agregarTarjeta = function(){
 
   //obtener elementos
   var $boton = $("#guardar");
-  var $inputNombre = $("#first-name").val();
-  var $inputTelefono = $("#tel").val();
+
   var $contenedorContactos = $("#contenedorContactos");
   var $spanContador= $("#spanContador");
 
@@ -13,6 +12,8 @@ var agregarTarjeta = function(){
   $boton.click(crearTarjeta);
 
   function crearTarjeta(){
+    var $inputNombre = $("#first-name").val();
+    var $inputTelefono = $("#tel").val();
     //para crear elementos
     var $contenedorTarjeta = $("<div />").addClass("card");
     var $contenedorPersona = $("<div />").addClass("row card-content");
@@ -45,6 +46,12 @@ var agregarTarjeta = function(){
 
     contador ++;
     $spanContador.text(contador);
+    var $inputNombre = $("#first-name").val();
+    var $inputTelefono = $("#tel").val();
+    var $nombre = $("<p></p>)").addClass("card-title activator grey-text text-darken-4");
+      var $telefono = $("<span></span>");
+      $nombre.text($inputNombre);
+      $telefono.text($inputTelefono);
     // console.log($inputNombre);
     // console.log($inputTelefono);
 
@@ -52,10 +59,7 @@ var agregarTarjeta = function(){
   };
 
   // function agregarDatos(){
-  //   var $nombre = $("<p></p>)").addClass("card-title activator grey-text text-darken-4");
-  //   var $telefono = $("<span></span>");
-  //   $nombre.text($inputNombre.val());
-  //   $telefono.text($inputTelefono.val());
+  //
   //   };
 
 
